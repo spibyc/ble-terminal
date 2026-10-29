@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ble-terminal"
+version = "0.1.0"
+description = "A Qt Bluetooth Low Energy terminal for Linux, Windows, and macOS"
+requires-python = ">=3.11"
+dependencies = ["PySide6>=6.6,<7", "bleak>=1.0,<4"]
+
+[project.optional-dependencies]
+release = ["pyinstaller>=6.16,<7", "Pillow>=10,<13", "build>=1.2,<2"]
+
+[project.scripts]
+ble-terminal = "ble_terminal.app:main"
+
+[tool.setuptools.packages.find]
+include = ["ble_terminal*"]
+
+[tool.setuptools.package-data]
+ble_terminal = ["assets/*.svg"]

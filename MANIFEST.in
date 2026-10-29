@@ -1,0 +1,5 @@
+include README.md
+recursive-include packaging *.py *.spec *.desktop
+recursive-include packaging *.txt
+recursive-include tests *.py
+recursive-include .github/workflows *.yml

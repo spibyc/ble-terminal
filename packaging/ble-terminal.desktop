@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=BLE Terminal
+Comment=Scan BLE devices and exchange commands
+Exec=ble-terminal
+Icon=bluetooth
+Terminal=false
+Categories=Utility;Development;
+Keywords=Bluetooth;BLE;GATT;UART;
+StartupWMClass=BLE Terminal
